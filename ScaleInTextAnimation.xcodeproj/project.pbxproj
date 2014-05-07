@@ -19,8 +19,6 @@
 		898C83AD191A51E6007603F0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 898C83AC191A51E6007603F0 /* XCTest.framework */; };
 		898C83AE191A51E6007603F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 898C838D191A51E6007603F0 /* Foundation.framework */; };
 		898C83AF191A51E6007603F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 898C8391191A51E6007603F0 /* UIKit.framework */; };
-		898C83B7191A51E6007603F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 898C83B5191A51E6007603F0 /* InfoPlist.strings */; };
-		898C83B9191A51E6007603F0 /* ScaleInTextAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 898C83B8191A51E6007603F0 /* ScaleInTextAnimationTests.m */; };
 		898C83C5191A528D007603F0 /* CATextLayer+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 898C83C4191A528D007603F0 /* CATextLayer+Animations.m */; };
 		898C83C8191A533B007603F0 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 898C83C7191A533B007603F0 /* CoreText.framework */; };
 /* End PBXBuildFile section */
@@ -52,9 +50,6 @@
 		898C83A5191A51E6007603F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		898C83AB191A51E6007603F0 /* ScaleInTextAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScaleInTextAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		898C83AC191A51E6007603F0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		898C83B4191A51E6007603F0 /* ScaleInTextAnimationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScaleInTextAnimationTests-Info.plist"; sourceTree = "<group>"; };
-		898C83B6191A51E6007603F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		898C83B8191A51E6007603F0 /* ScaleInTextAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScaleInTextAnimationTests.m; sourceTree = "<group>"; };
 		898C83C3191A528D007603F0 /* CATextLayer+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATextLayer+Animations.h"; sourceTree = "<group>"; };
 		898C83C4191A528D007603F0 /* CATextLayer+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATextLayer+Animations.m"; sourceTree = "<group>"; };
 		898C83C7191A533B007603F0 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -89,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				898C8393191A51E6007603F0 /* ScaleInTextAnimation */,
-				898C83B2191A51E6007603F0 /* ScaleInTextAnimationTests */,
 				898C838C191A51E6007603F0 /* Frameworks */,
 				898C838B191A51E6007603F0 /* Products */,
 			);
@@ -138,24 +132,6 @@
 				898C8396191A51E6007603F0 /* InfoPlist.strings */,
 				898C8399191A51E6007603F0 /* main.m */,
 				898C839B191A51E6007603F0 /* ScaleInTextAnimation-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		898C83B2191A51E6007603F0 /* ScaleInTextAnimationTests */ = {
-			isa = PBXGroup;
-			children = (
-				898C83B8191A51E6007603F0 /* ScaleInTextAnimationTests.m */,
-				898C83B3191A51E6007603F0 /* Supporting Files */,
-			);
-			path = ScaleInTextAnimationTests;
-			sourceTree = "<group>";
-		};
-		898C83B3191A51E6007603F0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				898C83B4191A51E6007603F0 /* ScaleInTextAnimationTests-Info.plist */,
-				898C83B5191A51E6007603F0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -255,7 +231,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				898C83B7191A51E6007603F0 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				898C83B9191A51E6007603F0 /* ScaleInTextAnimationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,14 +280,6 @@
 				898C83A0191A51E6007603F0 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		898C83B5191A51E6007603F0 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				898C83B6191A51E6007603F0 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -474,6 +440,7 @@
 				898C83BE191A51E6007603F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		898C83BF191A51E6007603F0 /* Build configuration list for PBXNativeTarget "ScaleInTextAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +449,7 @@
 				898C83C1191A51E6007603F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
